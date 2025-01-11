@@ -1,0 +1,16 @@
+* {
+    font-family: 'Courier New';
+}
+/* heading selector */
+h1{
+    color: #1b74e4;
+}
+/* id selector */
+#searchbtn{
+    background-color: black;
+    color: white;
+}
+/* class selector */
+.userbtn{
+    background-color: aqua;
+}

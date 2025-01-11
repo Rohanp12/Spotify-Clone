@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox and radio</title>
+</head>
+<body>
+    <form action="/server">
+        <input type="checkbox" id="age" name="age" checked/>
+        <label for="age">I am 18+</label>
+        <div>
+        <input type="radio" name="fruit" name="apple"/>
+        <label for="apple">apple</label>
+        <input type="radio" name="fruit" name="mango"/>
+        <label for="mango">mango</label>
+        </div>
+        <div>
+            choose your subjects:
+            <input type="checkbox" id="maths" name="subjects">
+            <label for="maths">maths</label>
+            <input type="checkbox" id="biology" name="subjects">
+            <label for="biology">biology</label>
+            <input type="checkbox" id="chemistry" name="subjects">
+            <label for="chemistry">chemistry</label>
+            <input type="checkbox" id="physics" name="subjects">
+            <label for="physics">physics</label>
+        </div>
+        <button>submit</button>
+        <div>
+            choose your profession:
+            <select name="profession" id="profession">
+                <option value="stu">student</option>
+                <option value="wor">worker</option>
+                <option value="dev">developer</option>
+            </select>
+        </div>
+        <div>
+            <label for="vol"> select your volume level:</label>
+            <input type="range" id="vol" min="0" max="100" name="vol"/>
+        </div>
+        <button>submit</button>
+        <div>
+            <label for="feedback">please provide your feedback : </label>
+            <textarea id="feedback" name="feddback"></textarea>
+        </div>
+    </form>
+</body>
+</html>
