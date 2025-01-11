@@ -1,35 +1,60 @@
-@font-face{
+@font-face {
     font-family: 'Montserrat-Black';
-    src:url('D:\Java Programing\Web Development\Spotify Clone\Montserrat.zip\static')
-    format('woff2');
+    src: url('D:\Java Programing\Web Development\Spotify Clone\Montserrat.zip\static') format('woff2');
 }
 
 * {
   font-family: "Montserrat", serif;
-  margin: 0 ;
+  margin: 0;
   background-color: black;
   color: #fff;
-  overflow: hidden;  
+  overflow: hidden;
+  padding: 0;
 }
-.main{
+
+.main {
     display: flex;
     height: 100vh;
 }
 
-.sidebar{
-    background-color: black;
+.sidebar {
+    background-color: black; 
     width: 340px;
     border-radius: 1rem;
+    position: relative;
 }
 
-.main-content{
+.sidebar .nav {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    height: auto;
+    position: relative;
+}
+
+.nav-option {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100px;
+    background-color: transparent;
+}
+
+.nav-option i {
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.main-content {
     background-color: #121212;
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
 }
 
-.music-player{
+.music-player {
     background-color: black;
     position: fixed;
     bottom: 0;
@@ -37,13 +62,8 @@
     height: 72px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
-}
-
-.nav{
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
+    background-color: transparent;
 }
